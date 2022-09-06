@@ -1,11 +1,9 @@
 <!--pages/todo/todo.wxml-->
 <import src="/template/list/list"/>
-<import src="/template/coverPage/coverPage"/>
 <view class="page-container {{list.length == 0 ? 'height' : ''}}">
   <view class="todo-header">
 	  <view class="todo-title">你必须做你不得不做的事</view>
-	  <input class="todo-input" type="text" focus placeholder="请输入你需要完成的事情" value="{{inputValue}}" bindconfirm="addTodo"/>
+	  <input class="todo-input"	placeholder-class="todo-input_placeholder" type="text" focus placeholder="请输入你需要完成的事情"	placeholder-style="color: #a6e3e9" value="{{inputValue}}" bindconfirm="addTodo"/>
 	</view>
 	<template is="list" data="{{list}}"/>
 </view>
-<!-- <template is="coverPage" data="{{btn,show}}"/> -->

@@ -5,15 +5,8 @@ const db = wx.cloud.database();
 Page({
   data: {
     list: [],
-    show: false,
-    btn: [
-      { id: null, event: "toOkrDetail", name: "查看"},
-      { id: null, event: "toOkrEdit", name: "编辑"},
-      { id: null, event: "changeStatus", name: "标记为已完成", status: 0},
-      { id: null, event: "deleteObjective", name: "删除"},
-      { id: null, event: "hidePage", name: "取消"},
-    ]
-  },
+	},
+	count: 1,
   onLoad() {
     this.showList();
   },
@@ -21,10 +14,13 @@ Page({
     this.showList();
   },
   showList() {
-		wx.showLoading({
-			title: "加载中",
-			mask: true
-		});
+		if (this.count == 1) {
+			this.count++;
+			wx.showLoading({
+				title: "加载中",
+				mask: true
+			});
+		}
     const table = "objective";
     const _openid = wx.getStorageSync("openid");
     const done_at = false;

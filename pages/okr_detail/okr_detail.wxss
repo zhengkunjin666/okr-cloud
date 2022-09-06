@@ -22,7 +22,7 @@
   content: "";
   width: 1px;
   height: 100%;
-  background-color: #fceeee;
+  background-color: #e3fdfd;
   position: absolute;
   top: 0;
   left: 60rpx;
@@ -36,13 +36,13 @@
   width: 30rpx;
   height: 30rpx;
   border-radius: 50%;
-  background-color: #fceeee;
+  background-color: #e3fdfd;
   position: absolute;
   top: 12rpx;
   left: -54rpx;
 }
 .okr-item.active::before {
-  background-color: rgb(250, 131, 131);
+  background-color: #cbf1f5;
 }
 .okr-title {
   font-size: 14px;
@@ -53,15 +53,16 @@
 }
 .okr-todo-item {
   font-size: 13px;
-  color: #999;
-  line-height: 70rpx;
+  color: #a6e3e9;
+	line-height: 40rpx;
+	margin-bottom: 10rpx;
 }
 .okr-todo-item.active {
-  text-decoration: line-through #ff5145;
+  text-decoration: line-through #a6e3e9;
 }
 .okr-status {
   font-size: 13px;
-  color: #999;
+  color: #a6e3e9;
   position: absolute;
   top: 0;
   right: 0;

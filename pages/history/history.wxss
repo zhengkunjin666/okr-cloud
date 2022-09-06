@@ -1,7 +1,7 @@
 /* pages/history/history.wxss */
 .history-title {
 	font-size: 13px;
-	color: #999;
+	color: #71c9ce;
 	background: #fff;
 	padding-top: 20rpx;
 	padding-bottom: 30rpx;

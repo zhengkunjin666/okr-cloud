@@ -9,13 +9,13 @@
 }
 .todo-title {
 	font-size: 13px;
-	color: #999;
+	color: #71c9ce;
 }
 .todo-input {
   height: 80rpx;
   font-size: 14px;
-	border: 1px solid #ff5145;
+	color: #71c9ce;
+	border: 1px solid #71c9ce;
 	margin-top: 20rpx;
-	padding-left: 10rpx;
+	padding: 0 20rpx;
 }
-

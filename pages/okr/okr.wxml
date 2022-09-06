@@ -1,6 +1,5 @@
 <!--pages/okr/okr.wxml-->
 <import src="/template/list/list"/>
-<import src="/template/coverPage/coverPage"/>
 <view class="page-container {{list.length == 0 ? 'height' : ''}}">
   <view class="objective-header">
 	  <button class="objective-btn" hover-class="objective-btn_hover" style="width: 100%;height: 100rpx;" bindtap="toOkrCreate">添加 OKR</button>

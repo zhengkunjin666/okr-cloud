@@ -13,11 +13,13 @@
 	display: flex;
 }
 .okr-title {
-  color: #ff5145;
+	color: #71c9ce;
+	word-break: break-all;
 }
 .okr-input {
 	height: 80rpx;
-	border: 1px solid #ff5145;
+	color: #71c9ce;
+	border: 1px solid #71c9ce;
 	padding: 0 20rpx;
   margin-right: 40rpx;
 	flex: 1;
@@ -25,8 +27,8 @@
 .okr-icon {
 	width: 86rpx;
 	height: 86rpx;
-	color: #fff;
-	background: #ff5145;
+	color: #e3fdfd;
+	background: #71c9ce;
 	text-align: center;
 	line-height: 86rpx;
 }
@@ -42,8 +44,8 @@
   font-size: 16px;
   font-weight: 400;
 	letter-spacing: 20rpx;
-	color: #fff;
-	background: #ff5145;
+	color: #e3fdfd;
+	background: #71c9ce;
 	border-radius: 50rpx;
 	padding: 0;
 	line-height: 100rpx;

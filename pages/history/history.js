@@ -6,17 +6,21 @@ Page({
   data: {
     list: [],
   },
+	count: 1,
   onLoad() {
     this.showList();
   },
   onShow() {
     this.showList();
-  },
+	},
   showList() {
-		wx.showLoading({
-			title: "加载中",
-			mask: true
-		});
+		if (this.count == 1) {
+			this.count++;
+			wx.showLoading({
+				title: "加载中",
+				mask: true
+			});
+		}
     const table = "todo";
     const _openid = wx.getStorageSync("openid");
     const status = "done";
@@ -26,7 +30,6 @@ Page({
       name: "queryFunction",
       data: { table, _openid, status, done_at },
       success(res) {
-        console.log(res)
         const list = res.result.data;
         list.forEach(data => {
           data.created_at = util.formatTime(new Date(data.created_at));
@@ -92,11 +95,11 @@ Page({
                           return;
                         }
                       });
+                      that.showList();
                       wx.showToast({
                         title: "删除成功",
                         mask: true,
                       });
-                      that.showList();
                     }
                   })
                 }

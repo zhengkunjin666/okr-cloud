@@ -1,16 +1,17 @@
 /* pages/welcome/welcome.wxss */
-@-webkit-keyframes changeColor{
-  0%{background-color: #f83a2d;}
-  10%{background-color: #f7872b;}
-  20%{background-color: #f7b02d;}
-  30%{background-color: #f8eb2d;}
-  40%{background-color: #d3f82e;}
-  50%{background-color: #41f829;}
-  60%{background-color: #2dfac7;}
-  70%{background-color: #2dd5f3;}
-  80%{background-color: #3165f3;}
-  9%{background-color: #7630f8;}
-  100%{background-color: #c82af8;}
+@-webkit-keyframes changeColorBefore{
+  0%{background-color: #e3fdfd;}
+  25%{background-color: #cbf1f5;}
+  50%{background-color: #a6e3e9;}
+  75%{background-color: #71c9ce;}
+  100%{background-color: #3fc1c9;}
+}
+@-webkit-keyframes changeColorAfter{
+  0%{background-color: #3fc1c9;}
+  25%{background-color: #71c9ce;}
+  50%{background-color: #a6e3e9;}
+  75%{background-color: #cbf1f5;}
+  100%{background-color: #e3fdfd;}
 }
 .page-container {
   position: relative;
@@ -25,7 +26,7 @@
 	top: 0;
 	border-radius: 0 0 50% 50%;
   z-index: -10;
-  -webkit-animation: changeColor 5s linear 0s infinite alternate;
+  -webkit-animation: changeColorBefore 2.5s linear 0s infinite alternate;
 }
 .page-container::after {
 	content: "";
@@ -37,7 +38,7 @@
 	border-radius: 0 0 50% 50%;
 	background-color: #bc08f3;
 	z-index: -9;
-  -webkit-animation: changeColor 5s linear 1s infinite alternate;
+  -webkit-animation: changeColorAfter 2.5s linear 0s infinite alternate;
 }
 .title-container {
 	font-size: 20px;
@@ -58,7 +59,7 @@
 	left: 100rpx;
 }
 .btn {
-	color: #fff;
+	color: #000;
 	text-align: center;
 	line-height: 120rpx;
 	padding: 0;
@@ -67,7 +68,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	border-radius: 50rpx;
-  -webkit-animation: changeColor 10s linear 0s infinite alternate;
+  -webkit-animation: changeColorAfter 5s linear 0s infinite alternate;
 }
 .btn_hover {
 	opacity: 0.6;

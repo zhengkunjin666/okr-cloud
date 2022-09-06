@@ -6,7 +6,8 @@ Page({
   data: {
     list: [],
     inputValue: null,
-  },
+	},
+	count: 1,
   onLoad() {
     this.showList();
   },
@@ -14,10 +15,13 @@ Page({
     this.showList();
   },
   showList() {
-		wx.showLoading({
-			title: "加载中",
-			mask: true
-		});
+		if (this.count == 1) {
+			this.count++;
+			wx.showLoading({
+				title: "加载中",
+				mask: true
+			});
+		}
     const table = "todo";
     const _openid = wx.getStorageSync("openid");
     const status = "doing";
@@ -132,12 +136,12 @@ Page({
                           that.fail();
                           return;
                         }
-                      });
+											});
+											that.showList();
                       wx.showToast({
                         title: "删除成功",
                         mask: true,
                       });
-                      that.showList();
                     }
                   })
                 }

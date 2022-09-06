@@ -10,8 +10,8 @@
 .objective-btn {
   font-size: 16px;
   font-weight: 400;
-	color: #fff;
-	background: #ff5145;
+	color: #e3fdfd;
+	background: #71c9ce;
 	border-radius: 50rpx;
 	padding: 0;
 	line-height: 100rpx;

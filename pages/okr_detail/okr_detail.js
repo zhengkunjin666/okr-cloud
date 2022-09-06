@@ -6,16 +6,20 @@ Page({
   data: {
     list: [],
     okr: [],
-  },
+	},
+	count: 1,
   objectiveId: null,
   onLoad(option) {
     this.showList(option.id);
   },
   showList(id) {
-		wx.showLoading({
-			title: "加载中",
-			mask: true
-		});
+		if (this.count == 1) {
+			this.count++;
+			wx.showLoading({
+				title: "加载中",
+				mask: true
+			});
+		}
     this.objectiveId = id;
     const that = this;
     wx.cloud.callFunction({
