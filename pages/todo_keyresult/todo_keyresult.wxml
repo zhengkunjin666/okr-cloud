@@ -1,0 +1,14 @@
+<!--pages/todo_keyresult/todo_keyresult.wxml-->
+<view class="page-container">
+	<view class="todo_keyresult-title" wx:if="{{okr.length > 0}}">请选择关键成果KR（ KeyResult ）进行绑定</view>
+  <view class="todo_keyresult-bg" wx:else>
+    <image class="todo_keyresult-image" src="/images/todo-bg.png"></image>
+    <view class="todo_keyresult-text">目前还没有OKR，请先添加OKR</view>
+  </view>
+	<view class="todo_keyresult-list">
+		<view class="todo_keyresult-item" wx:for="{{okr}}" wx:key="objective">
+			<view class="todo_keyresult-item-title">目标：{{item.objective}}</view>
+			<view class="todo_keyresult-btn {{kr.active}}" bindtap="changeColor" wx:for="{{item.keyresult}}" wx:key="id" wx:for-item="kr" id="{{kr._id}}" data-active="{{!kr.active}}">{{kr.keyresult}}</view>
+		</view>
+	</view>
+</view>

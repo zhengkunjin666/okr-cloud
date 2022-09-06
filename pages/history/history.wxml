@@ -1,0 +1,6 @@
+<!--pages/history/history.wxml-->
+<import src="/template/list/list"/>
+<view class="page-container {{list.length == 0 ? 'height' : ''}}">
+  <view class="history-title" wx:if="{{list.length > 0}}">已完成的Todos，真棒~</view>
+  <template is="list" data="{{list}}"/>
+</view>

@@ -1,0 +1,4 @@
+/* pages/okr_create/okr_create.wxss */
+.page-container {
+  height: 100%;
+}

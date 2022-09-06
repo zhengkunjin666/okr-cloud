@@ -1,0 +1,71 @@
+/* pages/okr_detail/okr_detail.wxss */
+.page-containe.height {
+  height: 100%;
+}
+.okr-header {
+  height: 100%;
+  background: #fff;
+  padding-top: 40rpx;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.list-bg {
+  top: 50%;
+}
+.okr-list {
+  padding: 20rpx 0;
+  padding-left: 100rpx;
+  position: relative;
+}
+.okr-list::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #fceeee;
+  position: absolute;
+  top: 0;
+  left: 60rpx;
+}
+.okr-item {
+  position: relative;
+}
+.okr-item::before {
+  content: "";
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background-color: #fceeee;
+  position: absolute;
+  top: 12rpx;
+  left: -54rpx;
+}
+.okr-item.active::before {
+  background-color: rgb(250, 131, 131);
+}
+.okr-title {
+  font-size: 14px;
+  padding-right: 140rpx;
+}
+.okr-todo-list {
+  margin-top: 20rpx;
+}
+.okr-todo-item {
+  font-size: 13px;
+  color: #999;
+  line-height: 70rpx;
+}
+.okr-todo-item.active {
+  text-decoration: line-through #fd1201;
+}
+.okr-status {
+  font-size: 13px;
+  color: #999;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.okr-staus_hover {
+  opacity: 0.6;
+}

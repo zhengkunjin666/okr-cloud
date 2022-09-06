@@ -1,0 +1,11 @@
+/**app.wxss**/
+@import "/template/list/list.wxss";
+@import "/template/okrList/okrList.wxss";
+
+page {
+  height: 100%;
+  font-size: 16px;
+  font-family: Arial;
+  color: #333;
+  line-height: 1.6;
+}

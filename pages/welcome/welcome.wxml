@@ -1,0 +1,15 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="page-container">
+	<view class="title-container">
+		<view class="title">目标和关键成果</view>
+		<view class="subtitle">Objextive and Key Result</view>
+	</view>
+	<view class="content-container">
+		<view class="content">目标：我想让网站打开速度快一些</view>
+		<view class="content">-- 成果：打开速度快30%</view>
+		<view class="content">---- todo：替换提及较大的资源库</view>
+		<view class="content">---- todo：JavaScript代码压缩</view>
+		<view class="content">---- todo：图片资源压缩和代理</view>
+	</view>
+	<button class="btn" hover-class="btn_hover" bindtap="login" style="width: 75%;height: 120rpx;">立即体验</button>
+</view>

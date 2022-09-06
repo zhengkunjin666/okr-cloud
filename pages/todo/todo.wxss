@@ -1,0 +1,21 @@
+/* pages/todo/todo.wxss */
+.todo-header {
+	background: #fff;
+	padding-top: 20rpx;
+	padding-bottom: 30rpx;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.todo-title {
+	font-size: 13px;
+	color: #999;
+}
+.todo-input {
+  height: 80rpx;
+  font-size: 14px;
+	border: 1px solid #fd1201;
+	margin-top: 20rpx;
+	padding-left: 10rpx;
+}
+

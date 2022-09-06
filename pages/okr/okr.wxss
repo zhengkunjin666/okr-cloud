@@ -1,0 +1,21 @@
+/* pages/okr/okr.wxss */
+.objective-header {
+  background: #fff;
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.objective-btn {
+  font-size: 16px;
+  font-weight: 400;
+	color: #fff;
+	background: #fd1201;
+	border-radius: 50rpx;
+	padding: 0;
+	line-height: 100rpx;
+}
+.objective-btn_hover {
+	opacity: 0.6;
+}

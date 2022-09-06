@@ -1,0 +1,25 @@
+<template name="okrList">
+  <view class="page-container">
+  	<form catchsubmit="formSubmit">
+			<view class="okr-list">
+  	  	<view class="okr-item">
+		  	  <view class="okr-title">Objective 目标：</view>
+		  	  <view class="okr-input-container">
+		  	  	<input class="okr-input" name="objective" type="text" focus placeholder="请输入你的目标" value="{{objective}}"/>
+		  	  	<view class="okr-icon" hover-class="okr-icon_hover" bindtap="addKR">+</view>
+		  	  </view>
+  	  	</view>
+  	  	<view class="okr-item" wx:for="{{array}}" wx:key="*this">
+		  	  <view class="okr-title">Keyresult 成果 {{index + 1}}：</view>
+		  	  <view class="okr-input-container">
+		  	  	<input class="okr-input" name="keyresult{{index}}" type="text" placeholder="请输入你的成果" value="{{item.keyresult}}" bindinput="changeValue" id="{{item._id}}" data-kr="{{item.kr}}"/>
+		  	  	<view class="okr-icon" hover-class="okr-icon_hover" bindtap="reduceKR" id="{{item._id}}" data-kr="{{item.kr}}">-</view>
+		  	  </view>
+		  	</view>
+		  </view>
+      <view class="okr-footer">
+  	    <button class="okr-btn" hover-class="okr-btn_hover" style="width:100%;height: 100rpx;" form-type="submit">{{btn}}</button>
+      </view>
+  	</form>
+  </view>
+</template>

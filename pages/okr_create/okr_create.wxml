@@ -1,0 +1,3 @@
+<!--pages/okr_create/okr_create.wxml-->
+<import src="/template/okrList/okrList"/>
+<template is="okrList" data="{{array, btn}}"/>
