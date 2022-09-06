@@ -12,6 +12,10 @@ Page({
     this.showList(option.id);
   },
   showList(id) {
+		wx.showLoading({
+			title: "加载中",
+			mask: true
+		});
     this.objectiveId = id;
     const that = this;
     wx.cloud.callFunction({
@@ -36,6 +40,7 @@ Page({
           })
         })
         that.setData({ okr: keyresult });
+				wx.hideLoading();
       },
       fail() {
         that.fail();

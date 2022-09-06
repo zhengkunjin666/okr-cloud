@@ -15,7 +15,7 @@
 .todo_keyresult-bg {
   width: 100%;
 	font-size: 14px;
-	color: #fd1201;
+	color: #ff5145;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -32,18 +32,18 @@
 }
 .todo_keyresult-item-title {
   font-size: 15px;
-  color: #fd1201;
+  color: #ff5145;
 	margin-bottom: 10rpx;
 }
 .todo_keyresult-btn {
   font-size: 14px;
 	text-align: left;
-	border: 1px solid #fd1201;
+	border: 1px solid #ff5145;
 	padding: 10rpx 10rpx;
 	line-height: 50rpx;
   margin-bottom: 30rpx;
 }
 .todo_keyresult-btn.active {
   color: #fff;
-  background: #fd1201;
+  background: #ff5145;
 }

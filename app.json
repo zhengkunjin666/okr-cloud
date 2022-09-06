@@ -11,14 +11,14 @@
   ],
   "window": {
       "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#fd1201",
+      "navigationBarBackgroundColor": "#ff5145",
       "navigationBarTitleText": "OKR管理",
       "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "bfbfbf",
     "selectedColor": "#fff",
-    "backgroundColor": "#fd1201",
+    "backgroundColor": "#ff5145",
     "list": [
       {
         "pagePath": "pages/todo/todo",

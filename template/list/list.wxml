@@ -1,7 +1,7 @@
 <template name="list">
 	<view class="list">
     <view class="list-bg" wx:if="{{list.length == 0}}">
-      <image class="list-image" src="/images/todo-bg.png"></image>
+      <image class="list-image" src="/images/todo_bg.png"></image>
       <view class="list-text">这里还没有内容</view>
     </view>
 		<view class="item" hover-class="item_hover" wx:for="{{list}}" wx:key="_id"  bindtap="showActionSheet" id="{{item._id}}" data-status="{{item.status}}">

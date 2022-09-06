@@ -1,16 +1,16 @@
 /* pages/welcome/welcome.wxss */
 @-webkit-keyframes changeColor{
-  0%{background-color: #f31708;}
-  10%{background-color: #f37208;}
-  20%{background-color: #f3a108;}
-  30%{background-color: #fded07;}
-  40%{background-color: #c8f308;}
-  50%{background-color: #23f308;}
-  60%{background-color: #08f3b8;}
-  70%{background-color: #08d0f3;}
-  80%{background-color: #0847f3;}
-  9%{background-color: #5a08f3;}
-  100%{background-color: #bc08f3;}
+  0%{background-color: #f83a2d;}
+  10%{background-color: #f7872b;}
+  20%{background-color: #f7b02d;}
+  30%{background-color: #f8eb2d;}
+  40%{background-color: #d3f82e;}
+  50%{background-color: #41f829;}
+  60%{background-color: #2dfac7;}
+  70%{background-color: #2dd5f3;}
+  80%{background-color: #3165f3;}
+  9%{background-color: #7630f8;}
+  100%{background-color: #c82af8;}
 }
 .page-container {
   position: relative;

@@ -10,6 +10,10 @@ Page({
     this.showPage(option.id, this.showActive);
   },
   showPage(id, callback) {
+		wx.showLoading({
+			title: "加载中",
+			mask: true
+		});
     this.todo_id = id;
     const table = "objective";
     const _openid = wx.getStorageSync("openid");
@@ -31,8 +35,8 @@ Page({
               that.setData({ okr });
               list.length - 1 == index ? callback() : "";
             }
-          })
-        })
+          });
+				});
       },
       fail() {
         that.fail();
@@ -58,7 +62,8 @@ Page({
         });
         that.setData({
           okr: okr,
-        })
+				});
+				wx.hideLoading();
       },
       fail() {
         that.fail();

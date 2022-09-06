@@ -14,7 +14,7 @@
 .todo-input {
   height: 80rpx;
   font-size: 14px;
-	border: 1px solid #fd1201;
+	border: 1px solid #ff5145;
 	margin-top: 20rpx;
 	padding-left: 10rpx;
 }

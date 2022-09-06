@@ -57,7 +57,7 @@
   line-height: 70rpx;
 }
 .okr-todo-item.active {
-  text-decoration: line-through #fd1201;
+  text-decoration: line-through #ff5145;
 }
 .okr-status {
   font-size: 13px;

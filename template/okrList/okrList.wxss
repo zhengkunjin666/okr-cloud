@@ -13,11 +13,11 @@
 	display: flex;
 }
 .okr-title {
-  color: #fd1201;
+  color: #ff5145;
 }
 .okr-input {
 	height: 80rpx;
-	border: 1px solid #fd1201;
+	border: 1px solid #ff5145;
 	padding: 0 20rpx;
   margin-right: 40rpx;
 	flex: 1;
@@ -26,7 +26,7 @@
 	width: 86rpx;
 	height: 86rpx;
 	color: #fff;
-	background: #fd1201;
+	background: #ff5145;
 	text-align: center;
 	line-height: 86rpx;
 }
@@ -43,7 +43,7 @@
   font-weight: 400;
 	letter-spacing: 20rpx;
 	color: #fff;
-	background: #fd1201;
+	background: #ff5145;
 	border-radius: 50rpx;
 	padding: 0;
 	line-height: 100rpx;

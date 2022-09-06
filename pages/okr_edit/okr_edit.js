@@ -13,6 +13,10 @@ Page({
     this.showOkr(options.id);
   },
   showOkr(id) {
+		wx.showLoading({
+			title: "加载中",
+			mask: true
+		});
     this.objectiveId = id;
     const that = this;
     db.collection("objective").doc(id).get({
@@ -24,11 +28,12 @@ Page({
             const array = res.data;
             array.forEach(kr => kr.kr = that.count++);
             that.setData({ array });
+						wx.hideLoading();
           },
           fail() {
             that.fail();
           }
-        })
+				});
       },
       fail() {
         that.fail();

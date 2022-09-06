@@ -11,7 +11,7 @@
   font-size: 16px;
   font-weight: 400;
 	color: #fff;
-	background: #fd1201;
+	background: #ff5145;
 	border-radius: 50rpx;
 	padding: 0;
 	line-height: 100rpx;

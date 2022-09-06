@@ -13,6 +13,10 @@ Page({
     this.showList();
   },
   showList() {
+		wx.showLoading({
+			title: "加载中",
+			mask: true
+		});
     const table = "todo";
     const _openid = wx.getStorageSync("openid");
     const status = "done";
@@ -28,7 +32,8 @@ Page({
           data.created_at = util.formatTime(new Date(data.created_at));
           data.done_at = util.formatTime(new Date(data.done_at));
         })
-        that.setData({ list });
+				that.setData({ list });
+				wx.hideLoading();
       },
       fail() {
         that.fail();

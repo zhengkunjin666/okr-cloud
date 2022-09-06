@@ -2,7 +2,7 @@
 <view class="page-container">
 	<view class="todo_keyresult-title" wx:if="{{okr.length > 0}}">请选择关键成果KR（ KeyResult ）进行绑定</view>
   <view class="todo_keyresult-bg" wx:else>
-    <image class="todo_keyresult-image" src="/images/todo-bg.png"></image>
+    <image class="todo_keyresult-image" src="/images/todo_bg.png"></image>
     <view class="todo_keyresult-text">目前还没有OKR，请先添加OKR</view>
   </view>
 	<view class="todo_keyresult-list">
